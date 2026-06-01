@@ -4,6 +4,7 @@ const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 const GRAVITY = 9.8
 
+
 func _physics_process(delta):
 	# add gravity
 	if not is_on_floor():

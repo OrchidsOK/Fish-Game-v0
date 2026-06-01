@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://duoujol0yw542"]
 
 [ext_resource type="Script" uid="uid://cu5iopwjmaa05" path="res://scripts/player.gd" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://cuqyhd4x60ieo" path="res://scripts/inventory_ui.gd" id="2_yqjtg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yqjtg"]
 
@@ -23,6 +24,16 @@ shape = SubResource("CapsuleShape3D_lnu2h")
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1613111961]
 transform = Transform3D(1, 0, 0, 0, 0.9396927, 0.34202015, 0, -0.34202015, 0.9396927, 0, 1.4, 5)
 
+[node name="BubbleAnchor" type="Node3D" parent="CharacterBody3D" unique_id=586429319]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="BubbleSprite" type="Sprite3D" parent="CharacterBody3D/BubbleAnchor" unique_id=439419578]
+
+[node name="ItemLabel" type="Label3D" parent="CharacterBody3D/BubbleAnchor" unique_id=952893531]
+billboard = 1
+text = "Empty"
+font_size = 16
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=388175366]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1600930040]
@@ -30,4 +41,7 @@ environment = SubResource("Environment_lbhrr")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2029768348]
 use_collision = true
-size = Vector3(30, 1, 30)
+size = Vector3(100, 1, 100)
+
+[node name="InventoryUI" type="Node3D" parent="." unique_id=2091454060]
+script = ExtResource("2_yqjtg")

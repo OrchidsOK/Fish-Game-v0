@@ -36,6 +36,7 @@ grow_vertical = 2
 
 [node name="CheckBox" type="CheckBox" parent="VBoxContainer" unique_id=107668080]
 layout_mode = 2
+text = "FullScreen"
 
 [node name="HSlider" type="HSlider" parent="VBoxContainer" unique_id=250974984]
 layout_mode = 2
