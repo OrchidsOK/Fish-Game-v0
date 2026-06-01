@@ -5,4 +5,4 @@ and it will not be a longterm project, most likely. i plan to dedicate half a ye
 a fun cozy sandboxy game, while learning my godot skills so i can go on to do something greater. to whichever lost  
 internet traveler stumbles upon this repo, give it a go! if ive released a working release that is... :3  
 anyway i like making roadmaps in ms paint soooooooo
-![Roadmap Beta](assets/github-images/roadmap-beta.png)
+<img width="1152" height="648" alt="roadmap beta" src="https://github.com/user-attachments/assets/7daabc5f-15b7-4a49-a183-034b377943ad" />
