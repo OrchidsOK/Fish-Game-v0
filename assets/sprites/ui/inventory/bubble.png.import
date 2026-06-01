@@ -2,21 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pygqdfyontuq"
-path.s3tc="res://.godot/imported/TestFish1.png-fd15eb0d8da35275e58121cd53ea1226.s3tc.ctex"
+uid="uid://c141ea8pdeq0w"
+path="res://.godot/imported/bubble.png-a4554317e88ef734418bc9052295d99e.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/items/fish/TestFish1.png"
-dest_files=["res://.godot/imported/TestFish1.png-fd15eb0d8da35275e58121cd53ea1226.s3tc.ctex"]
+source_file="res://assets/sprites/ui/inventory/bubble.png"
+dest_files=["res://.godot/imported/bubble.png-a4554317e88ef734418bc9052295d99e.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

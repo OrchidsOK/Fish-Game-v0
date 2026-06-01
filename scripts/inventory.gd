@@ -1,7 +1,7 @@
 extends Node
 
 var items = []
-var max_slots = 5
+var max_slots = 999
 var selected_slot = 0
 
 func add_item(item_name: String, icon_path: String):
