@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b1fgvoy3r46fw"]
+
+[ext_resource type="Script" uid="uid://b4x7c41b2qugl" path="res://scripts/customise.gd" id="1_ifira"]
+
+[node name="Customise" type="Control" unique_id=2121571642]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ifira")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=255352150]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1508123288]
+layout_mode = 2
+text = "Skin Colour
+"
+
+[node name="SkinColor" type="ColorPickerButton" parent="VBoxContainer" unique_id=466506668]
+layout_mode = 2
+text = "SkinColor"
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=1936470376]
+layout_mode = 2
+text = "Clothes Colour"
+
+[node name="ClothesColor" type="ColorPickerButton" parent="VBoxContainer" unique_id=1866106937]
+layout_mode = 2
+text = "ClothesColor
+"
+
+[node name="SaveBack" type="Button" parent="VBoxContainer" unique_id=1351420249]
+layout_mode = 2
+text = "< Save & Back"

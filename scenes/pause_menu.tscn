@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bf5eytl6h0tdm"]
+
+[ext_resource type="Script" uid="uid://c20m0fpjkm8m" path="res://scripts/pause_menu.gd" id="1_n87rw"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=88557078]
+script = ExtResource("1_n87rw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=500479250]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5019608)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1693282178]
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Resume" type="Button" parent="VBoxContainer" unique_id=684188410]
+layout_mode = 2
+text = "Resume Game"
+
+[node name="ExitToMenu" type="Button" parent="VBoxContainer" unique_id=2132436300]
+layout_mode = 2
+text = "Exit to main menu"

@@ -9,15 +9,38 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yqjtg"]
 material = SubResource("StandardMaterial3D_iywne")
+radius = 0.25
+height = 0.75
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gee14"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0tnpc"]
+material = SubResource("StandardMaterial3D_gee14")
 radius = 0.3
-height = 1.2
+height = 0.6
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p57ef"]
+transparency = 1
+cull_mode = 2
 albedo_texture = ExtResource("2_lbhrr")
 
-[sub_resource type="SphereMesh" id="SphereMesh_u5sy4"]
+[sub_resource type="QuadMesh" id="QuadMesh_u5sy4"]
 material = SubResource("StandardMaterial3D_p57ef")
-radius = 0.3
+size = Vector2(0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lbhrr"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_iywne"]
+material = SubResource("StandardMaterial3D_lbhrr")
+radius = 0.1
+height = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u5sy4"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gee14"]
+material = SubResource("StandardMaterial3D_u5sy4")
+radius = 0.09
+height = 0.2
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lnu2h"]
 
@@ -29,12 +52,32 @@ radius = 0.3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 script = ExtResource("1_uwrxv")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1089478198]
+[node name="Body" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1089478198]
 mesh = SubResource("CapsuleMesh_yqjtg")
 
-[node name="Head" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1869920385]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("SphereMesh_u5sy4")
+[node name="Head" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1121185475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+mesh = SubResource("CapsuleMesh_0tnpc")
+
+[node name="Face" type="MeshInstance3D" parent="CharacterBody3D/Head" unique_id=1338822736]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3)
+mesh = SubResource("QuadMesh_u5sy4")
+
+[node name="ArmLeft" type="MeshInstance3D" parent="CharacterBody3D" unique_id=978012602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.1, 0)
+mesh = SubResource("CapsuleMesh_iywne")
+
+[node name="ArmRight" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1212596388]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0.25, 0.1, 0)
+mesh = SubResource("CapsuleMesh_iywne")
+
+[node name="HandLeft" type="MeshInstance3D" parent="CharacterBody3D" unique_id=413845661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, -0.1, 0)
+mesh = SubResource("SphereMesh_gee14")
+
+[node name="HandRight" type="MeshInstance3D" parent="CharacterBody3D" unique_id=33898268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.25, -0.1, 0)
+mesh = SubResource("SphereMesh_gee14")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=849098532]
 shape = SubResource("CapsuleShape3D_lnu2h")
@@ -58,6 +101,13 @@ sorting_offset = 1.0
 pixel_size = 0.1
 billboard = 1
 texture_filter = 0
+
+[node name="HandAnchor" type="Node3D" parent="CharacterBody3D" unique_id=162032950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.5, -0.3)
+
+[node name="HandSprite" type="Sprite3D" parent="CharacterBody3D/HandAnchor" unique_id=1954201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1, -0.5, 0.2)
+pixel_size = 0.025
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=388175366]
 

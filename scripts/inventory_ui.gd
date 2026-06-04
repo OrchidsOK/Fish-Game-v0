@@ -2,8 +2,10 @@ extends Node3D
 
 @onready var sprite = $"../CharacterBody3D/BubbleAnchor/ItemSprite"
 @onready var bubble = $"../CharacterBody3D/BubbleAnchor"
+@onready var hand_sprite = $"../CharacterBody3D/HandAnchor/HandSprite"
 
 func _ready():
+	Inventory.add_item("Empty", "")
 	Inventory.add_item("Apple", "res://assets/sprites/items/food/Apple.png")
 	Inventory.add_item("Banana", "res://assets/sprites/items/food/Banana.png")
 	Inventory.add_item("Bread", "res://assets/sprites/items/food/Bread.png")
@@ -27,7 +29,9 @@ func _process(_delta):
 
 func update_display():
 	var item = Inventory.get_selected_item()
-	if item:
+	if item and item["icon"] != "":
 		sprite.texture = load(item["icon"])
+		hand_sprite.texture = load(item["icon"])
 	else:
 		sprite.texture = null
+		hand_sprite.texture = null
