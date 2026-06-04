@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dha310f0pry00"
-path="res://.godot/imported/roadmap beta.png-0bb76e755d5f17c74c7e454d4ffcf222.ctex"
+uid="uid://byodv5afifeol"
+path="res://.godot/imported/icon.png-5804a4eecf02ec079b1cc073a3ec0969.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/github images/roadmap beta.png"
-dest_files=["res://.godot/imported/roadmap beta.png-0bb76e755d5f17c74c7e454d4ffcf222.ctex"]
+source_file="res://assets/github-images/icon.png"
+dest_files=["res://.godot/imported/icon.png-5804a4eecf02ec079b1cc073a3ec0969.ctex"]
 
 [params]
 
