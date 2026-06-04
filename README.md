@@ -6,9 +6,9 @@ In beta v0.1, i made the floor, and a movable character, a small options menu, a
 ### Beta 2:  
 In beta v0.2, I made the inventory ui, using a unique thoughtbubble type inventory to try and reduce any stress later down the line, and keep the game to its simple roots. i also added camera movement.  
 ### Beta 3:  
-Im calling this the texture update. I am currently on this stage, and i have made a updated character model, character colour in options menu, and will also be making the items code be physically applied, and the slected item show up in the players hand! i will also be working on a rudimentary map for this update. making everything pretty. Beta v0.3  
+BETA V03 NOW OUT. in beta v03, i fixed the character model, updated camera controls, added a character customization screen, fixed an inventory bug, added item model in hands, updated character model, working pause menu, etc.
 ### Beta 4:  
-My plan is to start interacting the character with the world. basic fishing, basic farming, fishing, or more.   
+My plan is to start interacting the character with the world, to make way for making the map. basic fishing, basic farming, fishing, or more.   
 # Honorable mentions and credits  
 ### Textures, sprites:  
 [Piskel](https://www.piskelapp.com/)  
