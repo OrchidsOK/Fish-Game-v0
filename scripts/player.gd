@@ -14,6 +14,10 @@ var cam_yaw = 0.0
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	var config = ConfigFile.new()
+	config.load("user://settings.cfg")
+	var player_color = config.get_value("settings", "player_color", Color.WHITE)
+	$MeshInstance3D.get_active_material(0).albedo_color = player_color
 
 func _input(event):
 	if event is InputEventMouseMotion:

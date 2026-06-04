@@ -1,10 +1,23 @@
 [gd_scene format=3 uid="uid://duoujol0yw542"]
 
 [ext_resource type="Script" uid="uid://cu5iopwjmaa05" path="res://scripts/player.gd" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://ci5prkr2ojey5" path="res://assets/sprites/character/face.png" id="2_lbhrr"]
 [ext_resource type="Texture2D" uid="uid://c141ea8pdeq0w" path="res://assets/sprites/ui/inventory/bubble.png" id="2_lnu2h"]
 [ext_resource type="Script" uid="uid://cuqyhd4x60ieo" path="res://scripts/inventory_ui.gd" id="2_yqjtg"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iywne"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_yqjtg"]
+material = SubResource("StandardMaterial3D_iywne")
+radius = 0.3
+height = 1.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p57ef"]
+albedo_texture = ExtResource("2_lbhrr")
+
+[sub_resource type="SphereMesh" id="SphereMesh_u5sy4"]
+material = SubResource("StandardMaterial3D_p57ef")
+radius = 0.3
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lnu2h"]
 
@@ -18,6 +31,10 @@ script = ExtResource("1_uwrxv")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1089478198]
 mesh = SubResource("CapsuleMesh_yqjtg")
+
+[node name="Head" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1869920385]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("SphereMesh_u5sy4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=849098532]
 shape = SubResource("CapsuleShape3D_lnu2h")

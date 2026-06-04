@@ -7,8 +7,14 @@ func _ready():
 	$VBoxContainer/Button.pressed.connect(_on_back_pressed)
 	$VBoxContainer/CheckBox.toggled.connect(_on_fullscreen_toggled)
 	$VBoxContainer/HSlider.value_changed.connect(_on_volume_changed)
+	$VBoxContainer/ColorPickerButton.color = config.get_value("settings", "player_color", Color.WHITE)
+	$VBoxContainer/ColorPickerButton.color_changed.connect(_on_color_changed)
 	load_settings()
-
+	
+func _on_color_changed(color):
+	config.set_value("settings", "player_color", color)
+	config.save(config_path)
+	
 func load_settings():
 	if config.load(config_path) == OK:
 		$VBoxContainer/CheckBox.button_pressed = config.get_value("settings", "fullscreen", false)
