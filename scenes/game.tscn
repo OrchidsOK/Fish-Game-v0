@@ -46,6 +46,9 @@ height = 0.2
 
 [sub_resource type="Environment" id="Environment_lbhrr"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0tnpc"]
+albedo_color = Color(0.53510916, 0.938045, 0.5459326, 1)
+
 [node name="Game" type="Node3D" unique_id=1522199168]
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=520305020]
@@ -117,6 +120,7 @@ environment = SubResource("Environment_lbhrr")
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2029768348]
 use_collision = true
 size = Vector3(100, 1, 100)
+material = SubResource("StandardMaterial3D_0tnpc")
 
 [node name="InventoryUI" type="Node3D" parent="." unique_id=2091454060]
 script = ExtResource("2_yqjtg")
