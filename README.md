@@ -10,5 +10,14 @@ Im calling this the texture update. I am currently on this stage, and i have mad
 ### Beta 4:  
 My plan is to start interacting the character with the world. basic fishing, basic farming, fishing, or more.   
 # Honorable mentions and credits  
-[Piskel](https://www.piskelapp.com/)  [Js Paint](https://github.com/1j01/jspaint)  [Godot](https://godotengine.org/)
+### Textures, sprites:  
+[Piskel](https://www.piskelapp.com/)  
+[Js Paint](https://github.com/1j01/jspaint)  
+### Programming:  
+[Godot](https://godotengine.org/)  
 [My goat](https://github.com/SakeyJakey)  
+# The development process:
+## Game design
+I make sprites using windows 95 emulator, [js paint](https://github.com/1j01/jspaint) because i simply love the style. i then make the background transparent using [piskel](https://www.piskelapp.com/), where i import them to [godot](https://godotengine.org/). 
+## The releasing process
+I occasionally will use cmd to git push to this repository, which is the reason for the code sometimes not matching to the latest release, and i do a release every time the game is up to standard with the roadmap.
