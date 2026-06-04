@@ -46,11 +46,6 @@ layout_mode = 2
 layout_mode = 2
 text = "FullScreen"
 
-[node name="ColorPickerButton" type="ColorPickerButton" parent="VBoxContainer" unique_id=1002247383]
+[node name="InvertY" type="CheckBox" parent="VBoxContainer" unique_id=272376199]
 layout_mode = 2
-text = "Characer Colour"
-color = Color(0.98570496, 0.9402886, 0.6393035, 1)
-
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=1534969452]
-layout_mode = 2
-text = "^Character Colour^"
+text = "Invert Camera"

@@ -7,9 +7,12 @@ func _ready():
 	$VBoxContainer/Button.pressed.connect(_on_back_pressed)
 	$VBoxContainer/CheckBox.toggled.connect(_on_fullscreen_toggled)
 	$VBoxContainer/HSlider.value_changed.connect(_on_volume_changed)
-	$VBoxContainer/ColorPickerButton.color = config.get_value("settings", "player_color", Color.WHITE)
-	$VBoxContainer/ColorPickerButton.color_changed.connect(_on_color_changed)
 	load_settings()
+	$VBoxContainer/InvertY.toggled.connect(_on_invert_y_toggled)
+	
+func _on_invert_y_toggled(enabled):
+	config.set_value("settings", "invert_y", enabled)
+	config.save(config_path)
 	
 func _on_color_changed(color):
 	config.set_value("settings", "player_color", color)
@@ -19,6 +22,7 @@ func load_settings():
 	if config.load(config_path) == OK:
 		$VBoxContainer/CheckBox.button_pressed = config.get_value("settings", "fullscreen", false)
 		$VBoxContainer/HSlider.value = config.get_value("settings", "volume", 1.0)
+		$VBoxContainer/InvertY.button_pressed = config.get_value("settings", "invert_y", false)
 
 func _on_fullscreen_toggled(enabled):
 	if enabled:
