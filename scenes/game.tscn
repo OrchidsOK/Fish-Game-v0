@@ -43,6 +43,8 @@ radius = 0.09
 height = 0.2
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lnu2h"]
+radius = 0.35
+height = 0.8
 
 [sub_resource type="Environment" id="Environment_lbhrr"]
 
