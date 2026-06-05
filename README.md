@@ -20,4 +20,4 @@ My plan is to start interacting the character with the world, to make way for ma
 ## Game design
 I make sprites using windows 95 emulator, [js paint](https://github.com/1j01/jspaint) because i simply love the style. i then make the background transparent using [piskel](https://www.piskelapp.com/), where i import them to [godot](https://godotengine.org/). 
 ## The releasing process
-I occasionally will use cmd to git push to this repository, which is the reason for the code sometimes not matching to the latest release, and i do a release every time the game is up to standard with the roadmap.
+I occasionally will use cmd to git push to this repository, which is the reason for the code sometimes not matching to the latest release, and i do a release every time the game is up to standard and at a point within the designated roadmap goals.
