@@ -19,4 +19,5 @@ func _on_resume():
 func _on_exit():
 	get_tree().paused = false
 	emit_signal("closing")
+	queue_free()
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")

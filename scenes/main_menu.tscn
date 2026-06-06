@@ -43,7 +43,8 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=437392176]
 layout_mode = 2
-text = "FISH-GAME v0.1"
+size_flags_horizontal = 4
+text = "PondSide"
 
 [node name="Button1" type="Button" parent="VBoxContainer" unique_id=1739657623]
 layout_mode = 2
